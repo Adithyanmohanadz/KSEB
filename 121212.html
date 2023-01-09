@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="../../../../vendors/css/vendor.bundle.base.css">
     <!-- endinject -->
     <!-- plugin css for this page -->
-    <link rel="stylesheet" href="../../../../vendors/datatables.net-bs4/dataTables.bootstrap4.css">
     <!-- End plugin css for this page -->
     <!-- inject:css -->
     <link rel="stylesheet" href="../../../../css/vertical-layout-light/style.css">
@@ -712,169 +711,245 @@
             <!-- partial -->
             <div class="main-panel">
                 <div class="content-wrapper">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="card-title">Data table</h4>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="table-responsive">
-                                        <table id="order-listing" class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th>Order #</th>
-                                                    <th>Purchased On</th>
-                                                    <th>Customer</th>
-                                                    <th>Ship to</th>
-                                                    <th>Base Price</th>
-                                                    <th>Purchased Price</th>
-                                                    <th>Status</th>
-                                                    <th>Actions</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>2012/08/03</td>
-                                                    <td>Edinburgh</td>
-                                                    <td>New York</td>
-                                                    <td>$1500</td>
-                                                    <td>$3200</td>
-                                                    <td>
-                                                        <label class="badge badge-info">On hold</label>
-                                                    </td>
-                                                    <td>
-                                                        <button class="btn btn-outline-primary">View</button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2</td>
-                                                    <td>2015/04/01</td>
-                                                    <td>Doe</td>
-                                                    <td>Brazil</td>
-                                                    <td>$4500</td>
-                                                    <td>$7500</td>
-                                                    <td>
-                                                        <label class="badge badge-danger">Pending</label>
-                                                    </td>
-                                                    <td>
-                                                        <button class="btn btn-outline-primary">View</button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3</td>
-                                                    <td>2010/11/21</td>
-                                                    <td>Sam</td>
-                                                    <td>Tokyo</td>
-                                                    <td>$2100</td>
-                                                    <td>$6300</td>
-                                                    <td>
-                                                        <label class="badge badge-success">Closed</label>
-                                                    </td>
-                                                    <td>
-                                                        <button class="btn btn-outline-primary">View</button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>4</td>
-                                                    <td>2016/01/12</td>
-                                                    <td>Sam</td>
-                                                    <td>Tokyo</td>
-                                                    <td>$2100</td>
-                                                    <td>$6300</td>
-                                                    <td>
-                                                        <label class="badge badge-success">Closed</label>
-                                                    </td>
-                                                    <td>
-                                                        <button class="btn btn-outline-primary">View</button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>5</td>
-                                                    <td>2017/12/28</td>
-                                                    <td>Sam</td>
-                                                    <td>Tokyo</td>
-                                                    <td>$2100</td>
-                                                    <td>$6300</td>
-                                                    <td>
-                                                        <label class="badge badge-success">Closed</label>
-                                                    </td>
-                                                    <td>
-                                                        <button class="btn btn-outline-primary">View</button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>6</td>
-                                                    <td>2000/10/30</td>
-                                                    <td>Sam</td>
-                                                    <td>Tokyo</td>
-                                                    <td>$2100</td>
-                                                    <td>$6300</td>
-                                                    <td>
-                                                        <label class="badge badge-info">On-hold</label>
-                                                    </td>
-                                                    <td>
-                                                        <button class="btn btn-outline-primary">View</button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>7</td>
-                                                    <td>2011/03/11</td>
-                                                    <td>Cris</td>
-                                                    <td>Tokyo</td>
-                                                    <td>$2100</td>
-                                                    <td>$6300</td>
-                                                    <td>
-                                                        <label class="badge badge-success">Closed</label>
-                                                    </td>
-                                                    <td>
-                                                        <button class="btn btn-outline-primary">View</button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>8</td>
-                                                    <td>2015/06/25</td>
-                                                    <td>Tim</td>
-                                                    <td>Italy</td>
-                                                    <td>$6300</td>
-                                                    <td>$2100</td>
-                                                    <td>
-                                                        <label class="badge badge-info">On-hold</label>
-                                                    </td>
-                                                    <td>
-                                                        <button class="btn btn-outline-primary">View</button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>9</td>
-                                                    <td>2016/11/12</td>
-                                                    <td>John</td>
-                                                    <td>Tokyo</td>
-                                                    <td>$2100</td>
-                                                    <td>$6300</td>
-                                                    <td>
-                                                        <label class="badge badge-success">Closed</label>
-                                                    </td>
-                                                    <td>
-                                                        <button class="btn btn-outline-primary">View</button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>10</td>
-                                                    <td>2003/12/26</td>
-                                                    <td>Tom</td>
-                                                    <td>Germany</td>
-                                                    <td>$1100</td>
-                                                    <td>$2300</td>
-                                                    <td>
-                                                        <label class="badge badge-danger">Pending</label>
-                                                    </td>
-                                                    <td>
-                                                        <button class="btn btn-outline-primary">View</button>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                    <div class="row">
+                        <div class="col-12 grid-margin">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Large Modal</h4>
+                                    <p class="card-description">Large sized modal with max-width set to <code>90%</code>
+                                    </p>
+                                    <!-- Dummy Modal Starts -->
+                                    <div class="modal demo-modal">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Modal title</h5>
+                                                    <button type="button" class="close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Modal body text goes here.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-success">Submit</button>
+                                                    <button type="button" class="btn btn-light">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
+                                    <!-- Dummy Modal Ends -->
+                                    <!-- Modal starts -->
+                                    <div class="text-center">
+                                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">Click for demo<i
+                                                class="mdi mdi-play-circle ms-1"></i></button>
+                                    </div>
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                    <button type="button" class="close" data-bs-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Modal body text goes here.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-success">Submit</button>
+                                                    <button type="button" class="btn btn-light"
+                                                        data-bs-dismiss="modal">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal Ends -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Medium Modal</h4>
+                                    <p class="card-description">Normal modal with default bootstrap settings</p>
+                                    <!-- Dummy Modal Starts -->
+                                    <div class="modal demo-modal">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Modal title</h5>
+                                                    <button type="button" class="close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Modal body text goes here.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-success">Submit</button>
+                                                    <button type="button" class="btn btn-light">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Dummy Modal Ends -->
+                                    <!-- Modal starts -->
+                                    <div class="text-center">
+                                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal-2">Click for demo<i
+                                                class="mdi mdi-play-circle ms-1"></i></button>
+                                    </div>
+                                    <div class="modal fade" id="exampleModal-2" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel-2" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel-2">Modal title</h5>
+                                                    <button type="button" class="close" data-bs-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Modal body text goes here.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-success">Submit</button>
+                                                    <button type="button" class="btn btn-light"
+                                                        data-bs-dismiss="modal">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal Ends -->
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-6 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Small Modal</h4>
+                                    <p class="card-description">Small modal with max-width set to <code>300px</code></p>
+                                    <!-- Dummy Modal Starts -->
+                                    <div class="modal demo-modal">
+                                        <div class="modal-dialog modal-sm">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Modal title</h5>
+                                                    <button type="button" class="close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Modal body text goes here.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-success">Submit</button>
+                                                    <button type="button" class="btn btn-light">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Dummy Modal Ends -->
+                                    <!-- Modal starts -->
+                                    <div class="text-center">
+                                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal-3">Click for demo<i
+                                                class="mdi mdi-play-circle ms-1"></i></button>
+                                    </div>
+                                    <div class="modal fade" id="exampleModal-3" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel-3" aria-hidden="true">
+                                        <div class="modal-dialog modal-sm" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel-3">Modal title</h5>
+                                                    <button type="button" class="close" data-bs-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Modal body text goes here.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-success">Submit</button>
+                                                    <button type="button" class="btn btn-light"
+                                                        data-bs-dismiss="modal">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal Ends -->
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-xl-4 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Varying Modal Content</h4>
+                                    <div class="modal fade" id="exampleModal-4" tabindex="-1" role="dialog"
+                                        aria-labelledby="ModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="ModalLabel">New message</h5>
+                                                    <button type="button" class="close" data-bs-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <label for="recipient-name"
+                                                                class="col-form-label">Recipient:</label>
+                                                            <input type="text" class="form-control" id="recipient-name">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="message-text"
+                                                                class="col-form-label">Message:</label>
+                                                            <textarea class="form-control" id="message-text"></textarea>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-success">Send message</button>
+                                                    <button type="button" class="btn btn-light"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-info" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal-4" data-whatever="@mdo">Open modal for
+                                        @mdo</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Varying Modal Content</h4>
+                                    <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal-4" data-whatever="@fat">Open modal for
+                                        @fat</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Varying Modal Content</h4>
+                                    <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal-4" data-whatever="@getbootstrap">Modal for
+                                        @getbootstrap</button>
                                 </div>
                             </div>
                         </div>
@@ -905,6 +980,8 @@
     <!-- base:js -->
     <script src="../../../../vendors/js/vendor.bundle.base.js"></script>
     <!-- endinject -->
+    <!-- Plugin js for this page-->
+    <!-- End plugin js for this page-->
     <!-- inject:js -->
     <script src="../../../../js/off-canvas.js"></script>
     <script src="../../../../js/hoverable-collapse.js"></script>
@@ -913,11 +990,9 @@
     <script src="../../../../js/todolist.js"></script>
     <!-- endinject -->
     <!-- plugin js for this page -->
-    <script src="../../../../vendors/datatables.net/jquery.dataTables.js"></script>
-    <script src="../../../../vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
     <!-- End plugin js for this page -->
     <!-- Custom js for this page-->
-    <script src="../../../../js/data-table.js"></script>
+    <script src="../../../../js/modal-demo.js"></script>
     <!-- End custom js for this page-->
 </body>
 
