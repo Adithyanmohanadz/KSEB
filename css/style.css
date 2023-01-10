@@ -20934,6 +20934,22 @@ dl li {
   display: none;
 }
 
+/* ------------------------------------------- */
+
+  .count {
+  position: absolute;
+  left: auto;
+  width: 21px;
+  height: 21px;
+  border-radius: 10px;
+  top: -2px;
+  font-size: 15px;
+  line-height: 21px;
+}
+
+
+
+
 @media (min-width: 992px) {
   .navbar .navbar-menu-wrapper .navbar-nav.navbar-nav-right {
     margin-left: auto;
